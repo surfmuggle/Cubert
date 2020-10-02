@@ -1,0 +1,34 @@
+*{
+    margin:5;
+    padding:5;
+}
+body{
+    color:#55555F;
+    background-color: paleturquoise;;
+
+}
+
+.box1{
+    background-color: yellow;
+    letter-spacing: 0.1em;
+    font-style:initial;
+}
+.box2{
+    background-color: lawngreen;
+    border:5px dotted blueviolet;
+    color: coral;
+    border-radius: 5px;
+}
+.box3{
+    padding-bottom:8px;
+    border-bottom:dotted 2px #55555F;
+}
+.box4 li{
+    background-color: white;
+    list-style:none;
+    list-style-image:url('Bild1.jpg');
+}
+.hahaBild li{
+    list-style:none;
+    list-style-image:url('Patrick.Lachen.jpg');
+}

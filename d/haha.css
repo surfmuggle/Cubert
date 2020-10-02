@@ -1,0 +1,16 @@
+a{
+    text-decoration: none;   
+    color:rgb(0, 0, 0);
+}
+a:hover{
+    color:green;
+}
+a:active{
+    color:red;
+}
+.hahaBild li{
+        list-style:none;
+        list-style-image:url('Patrick.Lachen.jpg');
+        margin-left:420px;
+}
+
