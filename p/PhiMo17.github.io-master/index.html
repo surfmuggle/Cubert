@@ -1,35 +1,97 @@
 <!DOCTYPE html>
-<html lang="en"> 
-    <head>
-        <meta charset="utf-8">
-        <title>PhiMo17s GitHub Page</title>
-        <link rel="stylesheet" href="styles/style.css">
-    </head>
-    <body>
-        <div id="header">
-            <h1 id="head1"><b>PhiMo17s</b> GitHub Page</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="PhiMo17s Github Page">
+    <meta name="keywords" content="PhiMo17, PhiMo17s Github Page">
+    <title>PhiMo17s Github Page</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div id="header1">
+            <h1><b>PhiMo17s</b> Github Page</h1>
         </div>
-        <div id="nav">
-            <ul id="navlist">
-                <li id="liMain"><a href="https://phimo17.github.io./">Main</a></li>
-                <li id="liGitHub"><a href="https://github.com/PhiMo17">GitHub Page</a></li>
-                <li id="Curr.Rep">Current Repository</li>
+    </header>
+
+    <nav>
+        <div id="navHeader">
+            <h3>Navigation</h3>
+        </div>
+        <div id="navlist">
+            <ul>
+                <li id="navListMain"> <a href="https://phimo17.github.io./">Main</a></li>
+                <li id="navListGithub"><a href="https://github.com/PhiMo17">Github</a></li>
+                <li id="navListArticle">Articles
+                    <ul>
+                        <li id="navListCL1"><a href="">Crash Course HTML</a></li>
+                        <li id="navListCL2"><a href="">Crash Course Css</a></li>
+                        <li id="navListCL3"><a href="">MDN web docs</a></li>
+                        <li id="navListCL4"><a href="">SBB</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
-        <div id="main">
+    </nav>
+
+    <main class="index">
+        <div id="MainHeader">
             <h2>Main</h2>
-            <p id="initText">This is going to be my GitHub Page. <br>
-            It's currently a work in progress. <br>
-            Below is a rough mockup of the page</p>
-            <h3>rough-mockup</h3>
-            <img id="mockup" src="images/rough-mockup.jpg" alt="images/rough-mockup.jpg">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            
         </div>
-        <div id="foot"></div>
-    </body>
+        <div id="MainArticles">
+            <p id="MainInitText">This is going to be my GitHub page. <br>
+            It's curretly a work in progress. <br>
+            Below you'll see a some of my reference material <br> 
+            as well as a rough mockup of the site. </p>
+
+            <article class="art1">
+                <h3>HTML Crash Course</h3>
+                <small class="articleSmall">Video posted by Traversity Media on July 17, 2017</small>
+                <a href="https://www.youtube.com/watch?v=UB1O30fR-EE"><img src="images/html.webp" alt="HTML Crash Coure For Absolute Beginners by Traversity Media"></a>
+                <a href="https://www.youtube.com/watch?v=UB1O30fR-EE"><p class="articleText">In this crash course I will cram as much about HTML <br>
+                    that I can. This is meant for absolute beginners.<br>
+                    If you are interested in learning HTML...</p></a>
+            </article>
+
+            <div class="spacer1"></div>
+
+            <article class="art2">
+                <h3>CSS Crash Course</h3>
+                <small class="articleSmall">Video posted by Traversity Media on July 19, 2017</small>
+                <a href="https://www.youtube.com/watch?v=yfoY53QXEnI"><img src="images/css.webp" alt="CSS Crash Course For Absolute Beginners by Traversity Media"></a>
+                <a href="https://www.youtube.com/watch?v=yfoY53QXEnI"><p class="articleText">In this video I will cram as much as possible about CSS.<br>
+                    We will be looking at styles, selectors, <br>
+                    declarations, etc. We will build a CSS...</p></a>
+            </article>
+
+            <div class="spacer2"></div>
+
+            <article class="art3">
+                <h3>MDN web docs</h3>
+                <small class="articleSmall">&copy; 2005-2020 Mozilla and individual contributors. Content is available <a href="https://developer.mozilla.org/en-US/docs/MDN/About#Copyrights_and_licenses">under these licences.</a></small>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn"><img src="images/mdnWebDocs.png" alt="MDN web docs logo"></a>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn"><p class="articleText">Welcome to the MDN learning area. <br>
+                    This set of articles aims to provide complete beginners <br>
+                    to web development with all that they need to start coding...</p></a>
+            </article>
+
+            <div class="spacer3"></div>
+
+            <article class="art4">
+                <h3>Sabine Blindow Schule</h3>
+                <small class="articleSmall">&copy; 2020 Sabine Blindow-Schulen </small>
+                <a href="https://www.sabine-blindow-schulen.de/berufe/informationstechnische-assistenten/"><img src="images/sbb.jpg" alt="sbbLogo"></a>
+                <a href="https://www.sabine-blindow-schulen.de/berufe/informationstechnische-assistenten/"><p class="articleText">Alle Unternehmen sind auf ein perfekt funktionierendes <br>
+                    IT-System angewiesen. Alle Systeme müssen <br>
+                    gewartet, weiterentwickelt und...</p></a>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+            <small>&copy; PhiMo17 GitHub Page</small>
+    </footer>
+</body>
 </html>
