@@ -4,6 +4,7 @@
     border: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+/*General styles*/
 a{
     text-decoration: none;
     color: black;
@@ -52,6 +53,13 @@ nav a:hover{
 nav a{
     color: floralwhite;
 }
+
+footer{
+    margin-top: 10%;
+    text-align: center;
+}
+
+/*indexStyles*/
 main{
     margin-top: 5%;
     margin-left: 11%;
@@ -69,43 +77,27 @@ main{
     padding-right: 18%;
     padding-left: 18%;
 }
-.art1{
+.artSpacer{
+    margin: 5%;
+}
+.artLeft{
     text-align: left;
 }
-.art1 img{
+.artLeft img{
     float: left;
 }
-.spacer1{
-    margin: 5%;
-}
-
-.art2{
+.artRight{
     text-align: right;
 }
-.art2 img{
+.artRight img{
     float: right;
 }
-.spacer2{
-    margin: 5%;
-}
 
-.art3{
-    text-align: left;
-}
-.art3 img{
+/*mockupStyles*/
+.mockup{
     float: left;
 }
-.spacer3{
-    margin: 5%;
-}
-
-.art4{
-    text-align: right;
-}
-.art4 img{
-    float: right;
-}
-footer{
-    margin-top: 10%;
-    text-align: center;
+.mockup:hover{
+    height: auto;
+    width: 50%;
 }
