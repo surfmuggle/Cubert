@@ -1,6 +1,6 @@
 # Use Roslynpad  to connect to SQL Server
 
-## Using Ado.Net to get two result sets from a stored procedure 
+## Using Ado.Net to get the result from a sql query 
 
 This samples uses a [SqlDataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqldatareader?view=dotnet-plat-ext-7.0) to iterate over the results retunred from the database
 
