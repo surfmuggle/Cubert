@@ -1,7 +1,51 @@
-# Use Roslynpad and Dapper to connect to SQL Server
+# Use Roslynpad  to connect to SQL Server
 
-## Stored Procedure with two result sets
-This samples shows how to call a stored procedures that returns two resultsets.
+## Using Ado.Net to get two result sets from a stored procedure 
+
+This samples uses a [SqlDataReader](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqldatareader?view=dotnet-plat-ext-7.0) to iterate over the results retunred from the database
+
+```cs
+#r "nuget: Microsoft.Data.SqlClient, 5.1.1"
+
+using Microsoft.Data.SqlClient;
+
+// remove line breaks in your code 
+string conStr = @"Data Source=<your-db-server>;
+   Initial Catalog=<your-db>;
+   Integrated Security=False;
+   TrustServerCertificate=true;
+   User id=<your-user>;
+   Password=<your-pass>";
+
+var products = new List<Product>();     
+    
+string sqlQuery =  "SELECT Product_Id, ProductName FROM dbo.ORDER WHERE Product_Id in (1080, 1081, 1082);";
+using (SqlConnection connection = new SqlConnection(conStr))
+{
+    SqlCommand command = new SqlCommand(sqlQuery, connection);
+    connection.Open();
+    
+    using (SqlDataReader reader = command.ExecuteReader())
+    {
+       while (reader.Read())
+       {
+           // fill the list
+           products.Add(new Product{Id=reader.GetInt(0), ProductName=reader.GetString(1)});
+       }
+    }    
+}
+products.Dump();
+
+public class Product
+{
+    public int Id{ get; set; }
+    public string ProductName { get; set; }        
+};
+```
+
+
+## Using Dapper to get two result sets from a stored procedure 
+This samples shows how to call a stored procedures that returns two result sets.
 
 The stored procedures looks like this
 
